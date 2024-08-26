@@ -143,7 +143,7 @@ class HomeViewBody extends StatelessWidget {
               image: "assets/images/Rectangle 37.png",
             ),
             const SizedBox(
-              height: 30,
+              height: 100,
             ),
             const NavigatorBar(),
           ],
