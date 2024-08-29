@@ -15,28 +15,23 @@ class CustomButton extends StatelessWidget {
           height: 90,
           width: 80,
           padding: const EdgeInsets.all(12),
-          decoration: ShapeDecoration(
-            shadows: [
-              BoxShadow(
-                  color: Colors.grey.withOpacity(0.6),
-                  blurRadius: 45,
-                  spreadRadius: 0,
-                  offset: const Offset(0, 40))
-            ],
-            shape: RoundedRectangleBorder(
+          decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
-              side: const BorderSide(
-                color: Color.fromARGB(255, 132, 102, 197),
-              ),
-            ),
-          ),
+              boxShadow: [
+                BoxShadow(
+                    color: Colors.grey.withOpacity(0.6),
+                    blurRadius: 3,
+                    spreadRadius: .8,
+                    offset: const Offset(0, 5))
+              ],
+              color: const Color.fromARGB(255, 211, 201, 234)),
           child: Column(
             children: [
               SizedBox(
                 height: 31,
                 child: SvgPicture.asset(
                   image,
-                  color: const Color.fromARGB(255, 132, 102, 197),
+                  color: const Color.fromARGB(255, 89, 45, 184),
                 ),
               ),
               const SizedBox(height: 16),
@@ -53,3 +48,18 @@ class CustomButton extends StatelessWidget {
     );
   }
 }
+/* ShapeDecoration(
+            shadows: [
+              BoxShadow(
+                  color: Colors.grey.withOpacity(0.6),
+                  blurRadius: 45,
+                  spreadRadius: 0,
+                  offset: const Offset(0, 40))
+            ],
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(8),
+              side: const BorderSide(
+                color: Color.fromARGB(255, 132, 102, 197),
+              ),
+            ),
+          ),*/ 

@@ -68,7 +68,7 @@ class ExerciseCard extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               child: Image.asset(
                 image, // Replace with your exercise image asset
-                height: 100,
+                height: 120,
                 width: 100,
                 fit: BoxFit.cover,
               ),

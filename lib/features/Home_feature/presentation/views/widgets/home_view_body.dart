@@ -5,7 +5,6 @@ import 'package:gym_app/features/Home_feature/presentation/views/exercises_view.
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/custom_button.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/custom_tab_button_listview.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/method_item.dart';
-import 'package:gym_app/features/Home_feature/presentation/views/widgets/navigator_bar.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/offer_card.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -125,7 +124,7 @@ class HomeViewBody extends StatelessWidget {
                   'مايميزنا',
                   style: TextStyle(
                     fontSize: 18,
-                    color: Color(0xff30059D),
+                    color: Colors.black,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -145,7 +144,6 @@ class HomeViewBody extends StatelessWidget {
             const SizedBox(
               height: 100,
             ),
-            const NavigatorBar(),
           ],
         ),
       ),
