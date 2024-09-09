@@ -40,4 +40,10 @@ abstract class Styles {
       fontFamily: 'Inter',
       fontWeight: FontWeight.w500,
       height: 0);
+
+  static TextStyle styleBoldPurple18 = const TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: Colors.purple,
+  );
 }

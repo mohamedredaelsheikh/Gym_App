@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gym_app/features/Home_feature/presentation/views/trainer_info_view.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/custom_app_bar.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/custom_text_field.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/trainer_card.dart';
@@ -35,7 +36,15 @@ class TrainersViewBody extends StatelessWidget {
               itemCount: 4,
               itemBuilder: (context, index) {
                 return GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return const TrainerInfoView();
+                        },
+                      ),
+                    );
+                  },
                   child: const TrainerCard(
                     image:
                         'assets/images/trainer.png', // Replace with actual image paths
