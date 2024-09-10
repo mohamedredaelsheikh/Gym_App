@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:gym_app/core/utlis/styles.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/exercises_view.dart';
+import 'package:gym_app/features/Home_feature/presentation/views/offers_view.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/trainers_view.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/custom_button.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/custom_tab_button_listview.dart';
@@ -77,7 +78,15 @@ class HomeViewBody extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   CustomButton(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const OffersView();
+                          },
+                        ),
+                      );
+                    },
                     label: 'العروض',
                     image: "assets/images/Frame (4).svg",
                   ),

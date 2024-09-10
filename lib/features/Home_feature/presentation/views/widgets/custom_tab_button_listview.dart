@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:gym_app/features/Home_feature/presentation/views/widgets/custom_tab_button.dart';
 
 class TabButtonListView extends StatefulWidget {
-  const TabButtonListView({super.key, required this.paymentMethodItems});
+  const TabButtonListView({
+    super.key,
+    required this.paymentMethodItems,
+  });
   final List<String> paymentMethodItems;
 
   @override

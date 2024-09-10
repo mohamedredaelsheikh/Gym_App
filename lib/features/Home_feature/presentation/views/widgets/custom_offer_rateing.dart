@@ -18,7 +18,9 @@ class CustomOfferRating extends StatelessWidget {
         Column(
           children: [
             SvgPicture.asset("assets/images/Heart.svg"),
-            const SizedBox(height: 8),
+            const SizedBox(
+              height: 8,
+            ),
             Row(
               children: [
                 Text(rate),
@@ -27,6 +29,9 @@ class CustomOfferRating extends StatelessWidget {
               ],
             ),
           ],
+        ),
+        const SizedBox(
+          width: 8,
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.end,
